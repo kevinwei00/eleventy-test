@@ -1,0 +1,12 @@
+---
+permalink: "{{ page.fileSlug }}/index.html"
+---
+
+{% extends '../_templates/application.njk' %}
+{% set classes = page.fileSlug | string %}
+
+{% block app_body %}
+  {% for $ in collections.overview_b %}
+    {{ $.templateContent | safe }}
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+  "name": "eleventy-test",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -rf dist && eleventy --input='src' --output='dist' && rm -rf dist/content",
+    "dev": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Kevin Wei",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
