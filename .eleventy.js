@@ -4,8 +4,9 @@ module.exports = function (config) {
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
     dir: {
+      input: 'src',
+      output: 'dist',
       includes: '_templates',
-      layouts: '_layouts',
     },
   };
 };

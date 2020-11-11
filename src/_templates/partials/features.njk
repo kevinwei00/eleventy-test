@@ -1,0 +1,6 @@
+{% for feature in features %}
+  <div class="feature">
+    <h3>{{ feature.name | safe }}</h3>
+    <p>{{ feature.description | safe }}</p>
+  </div>
+{% endfor %}

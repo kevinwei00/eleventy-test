@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Company Name</title>
+  {% include "../views/analytics/google.njk" %}
 </head>
-<body class="welcome-{{ classes }}">
-  {% block app_body %}{% endblock %}
+<body class="welcome-{{ page.fileSlug }}">
+  <div class="{{ classes }}">
+    {{ content | safe }}
+  </div>
 </body>
 </html>
